@@ -12,9 +12,8 @@ let tableau = ['cissor', 'rock', 'papper'];
 //à modifier
 function pcGame() {
     let randomTab = Math.round(Math.random() * tableau.length);
-    if (tableau[0]) {
-        joueur2.innerHTML = 'cissor';
-    }
+        joueur2.innerHTML = tableau[randomTab];
+
 }
 
 
