@@ -9,17 +9,23 @@ let papper = document.getElementById('papper');
 let tableau = ['cissor', 'rock', 'papper'];
 
 
-cissor.addEventListener("click", function (){
+//à modifier
+function pcGame() {
     let randomTab = Math.round(Math.random() * tableau.length);
-    joueur2.innerHTML = tableau[randomTab];
+    if (tableau[0]) {
+        joueur2.innerHTML = 'cissor';
+    }
+}
+
+
+cissor.addEventListener("click", function (){
+    pcGame()
 })
 
 rock.addEventListener("click", function (){
-    let randomTab = Math.round(Math.random() * tableau.length);
-    joueur2.innerHTML = tableau[randomTab];
+    pcGame()
 })
 
 papper.addEventListener("click", function (){
-    let randomTab = Math.round(Math.random() * tableau.length);
-    joueur2.innerHTML = tableau[randomTab];
+    pcGame()
 })
