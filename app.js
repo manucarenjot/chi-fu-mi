@@ -12,7 +12,9 @@ let tableau = ['cissor', 'rock', 'papper'];
 //à modifier
 function pcGame() {
     let randomTab = Math.round(Math.random() * tableau.length);
-        joueur2.innerHTML = tableau[randomTab];
+
+    let reponse = randomTab
+        joueur2.innerHTML = tableau[reponse];
 
 }
 
