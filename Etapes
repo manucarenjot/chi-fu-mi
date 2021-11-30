@@ -1,5 +1,5 @@
 - faire un tableau avec les 3 choix
-- bouton joueur = choix
+- bouton joueur = choix pour faire 3 addEventListenner qui lance le jeu
 - faire une fonction pour selectionner un choix avec un Math random (comme dans les Exos)
 - créer des condition de victoire
 - lier les choix du tableau avec des images
