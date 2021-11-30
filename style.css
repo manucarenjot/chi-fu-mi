@@ -16,7 +16,8 @@ body {
 #jeu {
     width: 70%;
     height: 600px;
-    border: inset 8px #9549de;
+    border: inset 18px #9549de;
+    border-radius: 20px;
     background-color: #aae3c7;
     display: flex;
     flex-direction: row;
