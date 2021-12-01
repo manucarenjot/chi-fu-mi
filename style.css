@@ -32,12 +32,32 @@ body {
     flex-direction: column;
 }
 
-i {
+#icone1 {
     font-size: 3em;
 
 }
 
-i:hover {
+#icone1:hover {
+    cursor: pointer;
+    color: #00d0ff;
+}
+
+#icone2 {
+    font-size: 3em;
+
+}
+
+#icone2:hover {
+    cursor: pointer;
+    color: #00d0ff;
+}
+
+#icone3 {
+    font-size: 3em;
+
+}
+
+#icone3:hover {
     cursor: pointer;
     color: #00d0ff;
 }
