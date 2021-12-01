@@ -47,8 +47,8 @@ cissor.addEventListener("click", function (){
 rock.addEventListener("click", function (){
     joueur1.innerHTML = 'pierre';
     pcGame()
-    if (joueur2.innerHTML === 'papier'){
-        alert('perdu');
+    if (joueur2.innerHTML === 'ciseaux'){
+        alert('Gagné');
     }
     if (joueur2.innerHTML === 'pierre'){
         alert('egalité');
