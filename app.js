@@ -15,13 +15,15 @@ let player2 = '';
 
 let tableau = [ciseaux, papier, pierre];
 
+let victory = document.getElementById('victory');
+
 
 //à modifier
 function pcGame() {
     let randomTab = Math.floor(Math.random() * tableau.length);
 
     player2 = randomTab
-        joueur2.innerHTML = tableau[randomTab];
+    joueur2.innerHTML = tableau[randomTab];
     joueur2.style.fontSize = '4em';
     joueur2.style.color = 'red';
 
@@ -29,68 +31,73 @@ function pcGame() {
     joueur1.style.color = '#0083a1';
 
 
-
-
 }
 
 
-    cissor.addEventListener("click", function () {
-            joueur1.innerHTML = '<i class="far fa-hand-scissors"></i>';
-            pcGame()
+cissor.addEventListener("click", function () {
+    joueur1.innerHTML = '<i class="far fa-hand-scissors"></i>';
+    pcGame()
 
-            if (joueur2.innerHTML === '<i class="far fa-hand-scissors"></i>') {
-                result.innerHTML = 'Egalité';
-                result.style.color = 'orange';
+    if (joueur2.innerHTML === '<i class="far fa-hand-scissors"></i>') {
+        result.innerHTML = 'Egalité';
+        result.style.color = 'orange';
+    }
+
+    if (joueur2.innerHTML === '<i class="far fa-hand-paper"></i>') {
+        result.innerHTML = 'Gagné';
+        result.style.color = '#00fa0b';
+
+        if (result.innerHTML === 'Gagné') {
+            for (let i = 1; i < 4; ) {
+
+                victory[i].innerHTML += i++
 
             }
+        }
 
-            if (joueur2.innerHTML === '<i class="far fa-hand-paper"></i>') {
-                result.innerHTML = 'Gagné';
-                result.style.color = '#00fa0b';
-            }
-            if (joueur2.innerHTML === '<i class="far fa-hand-rock"></i>') {
-                result.innerHTML = 'perdu';
-                result.style.color = 'red';
+    }
+    if (joueur2.innerHTML === '<i class="far fa-hand-rock"></i>') {
+        result.innerHTML = 'perdu';
+        result.style.color = 'red';
+    }
 
-            }
-
-    })
+})
 
 
-rock.addEventListener("click", function (){
+rock.addEventListener("click", function () {
     joueur1.innerHTML = '<i class="far fa-hand-rock"></i>';
     pcGame()
-    if (joueur2.innerHTML === '<i class="far fa-hand-rock"></i>'){
+    if (joueur2.innerHTML === '<i class="far fa-hand-rock"></i>') {
         result.innerHTML = 'Egalité';
         result.style.color = 'orange';
 
     }
-    if (joueur2.innerHTML === '<i class="far fa-hand-scissors"></i>'){
+    if (joueur2.innerHTML === '<i class="far fa-hand-scissors"></i>') {
         result.innerHTML = 'Gagné';
         result.style.color = '#00fa0b';
 
     }
-    if (joueur2.innerHTML === '<i class="far fa-hand-paper"></i>'){
+    if (joueur2.innerHTML === '<i class="far fa-hand-paper"></i>') {
         result.innerHTML = 'perdu';
         result.style.color = 'red';
 
     }
 })
 
-papper.addEventListener("click", function (){
+papper.addEventListener("click", function () {
     joueur1.innerHTML = '<i class="far fa-hand-paper"></i>';
     pcGame()
-    if (joueur2.innerHTML === '<i class="far fa-hand-scissors"></i>'){
+    if (joueur2.innerHTML === '<i class="far fa-hand-scissors"></i>') {
         result.innerHTML = 'perdu';
         result.style.color = 'red';
 
     }
-    if (joueur2.innerHTML === '<i class="far fa-hand-rock"></i>'){
+    if (joueur2.innerHTML === '<i class="far fa-hand-rock"></i>') {
         result.innerHTML = 'Gagné';
         result.style.color = '#00fa0b';
 
     }
-    if (joueur2.innerHTML === '<i class="far fa-hand-paper"></i>'){
+    if (joueur2.innerHTML === '<i class="far fa-hand-paper"></i>') {
         result.innerHTML = 'Egalité';
         result.style.color = 'orange';
 
