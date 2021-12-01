@@ -24,6 +24,11 @@ function pcGame() {
     player2 = randomTab
     console.log(player2)
         joueur2.innerHTML = tableau[randomTab];
+    joueur2.style.fontSize = '4em';
+    joueur2.style.color = 'red';
+
+    joueur1.style.fontSize = '4em';
+    joueur1.style.color = '#0083a1';
 
 
 
@@ -37,14 +42,17 @@ cissor.addEventListener("click", function (){
     if (joueur2.innerHTML === '<i class="far fa-hand-scissors"></i>'){
         result.innerHTML = 'Egalité';
         result.style.color = 'orange';
+
     }
     if (joueur2.innerHTML === '<i class="far fa-hand-paper"></i>'){
         result.innerHTML = 'Gagné';
         result.style.color = '#00fa0b';
+
     }
     if (joueur2.innerHTML === '<i class="far fa-hand-rock"></i>'){
         result.innerHTML = 'perdu';
         result.style.color = 'red';
+
     }
 })
 
@@ -54,14 +62,17 @@ rock.addEventListener("click", function (){
     if (joueur2.innerHTML === '<i class="far fa-hand-rock"></i>'){
         result.innerHTML = 'Egalité';
         result.style.color = 'orange';
+
     }
     if (joueur2.innerHTML === '<i class="far fa-hand-scissors"></i>'){
         result.innerHTML = 'Gagné';
         result.style.color = '#00fa0b';
+
     }
     if (joueur2.innerHTML === '<i class="far fa-hand-paper"></i>'){
         result.innerHTML = 'perdu';
         result.style.color = 'red';
+
     }
 })
 
@@ -71,14 +82,16 @@ papper.addEventListener("click", function (){
     if (joueur2.innerHTML === '<i class="far fa-hand-scissors"></i>'){
         result.innerHTML = 'perdu';
         result.style.color = 'red';
+
     }
     if (joueur2.innerHTML === '<i class="far fa-hand-rock"></i>'){
         result.innerHTML = 'Gagné';
         result.style.color = '#00fa0b';
+
     }
     if (joueur2.innerHTML === '<i class="far fa-hand-paper"></i>'){
         result.innerHTML = 'Egalité';
         result.style.color = 'orange';
-        joueur2.style.fontSize = '2em';
+
     }
 })
