@@ -20,9 +20,7 @@ let tableau = [ciseaux, papier, pierre];
 function pcGame() {
     let randomTab = Math.floor(Math.random() * tableau.length);
 
-    console.log(randomTab)
     player2 = randomTab
-    console.log(player2)
         joueur2.innerHTML = tableau[randomTab];
     joueur2.style.fontSize = '4em';
     joueur2.style.color = 'red';
@@ -36,25 +34,28 @@ function pcGame() {
 }
 
 
-cissor.addEventListener("click", function (){
-    joueur1.innerHTML = '<i class="far fa-hand-scissors"></i>';
-    pcGame()
-    if (joueur2.innerHTML === '<i class="far fa-hand-scissors"></i>'){
-        result.innerHTML = 'Egalité';
-        result.style.color = 'orange';
+    cissor.addEventListener("click", function () {
+            joueur1.innerHTML = '<i class="far fa-hand-scissors"></i>';
+            pcGame()
 
-    }
-    if (joueur2.innerHTML === '<i class="far fa-hand-paper"></i>'){
-        result.innerHTML = 'Gagné';
-        result.style.color = '#00fa0b';
+            if (joueur2.innerHTML === '<i class="far fa-hand-scissors"></i>') {
+                result.innerHTML = 'Egalité';
+                result.style.color = 'orange';
 
-    }
-    if (joueur2.innerHTML === '<i class="far fa-hand-rock"></i>'){
-        result.innerHTML = 'perdu';
-        result.style.color = 'red';
+            }
 
-    }
-})
+            if (joueur2.innerHTML === '<i class="far fa-hand-paper"></i>') {
+                result.innerHTML = 'Gagné';
+                result.style.color = '#00fa0b';
+            }
+            if (joueur2.innerHTML === '<i class="far fa-hand-rock"></i>') {
+                result.innerHTML = 'perdu';
+                result.style.color = 'red';
+
+            }
+
+    })
+
 
 rock.addEventListener("click", function (){
     joueur1.innerHTML = '<i class="far fa-hand-rock"></i>';
