@@ -99,10 +99,9 @@ body {
 
 #win {
     width: 90%;
-    height: 7%;
     border: ridge 4px mediumslateblue;
     margin-top: 50px;
-    display: none;
+
 }
 
 #reset {
