@@ -17,6 +17,7 @@ let tableau = [ciseaux, papier, pierre];
 
 let victory = document.getElementById('victory');
 
+i=1;
 
 //à modifier
 function pcGame() {
@@ -48,7 +49,12 @@ cissor.addEventListener("click", function () {
         result.style.color = '#00fa0b';
 
         if (result.innerHTML === 'Gagné') {
-           //Créer une boucle calcul (regarder dans le cours les tableaux)
+            while (i<3) {
+                let calcul = i + 1;
+                i++
+                console.log(calcul);
+                //Créer une boucle calcul (regarder dans le cours les tableaux)
+            }
         }
 
     }
