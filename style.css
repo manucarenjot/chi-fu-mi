@@ -22,14 +22,18 @@ body {
     background-color: #dcfff2;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
 #choice {
+    width: 40%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 #icone1 {
@@ -72,10 +76,12 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
+    font-size: 4em;
 }
 
 #score {
-    width: 20%;
+    width: 30%;
+
 }
 
 #joueur2 {
@@ -88,4 +94,102 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
+    font-size: 4em;
+}
+
+#win {
+    width: 90%;
+    height: 7%;
+    border: ridge 4px mediumslateblue;
+    margin-top: 50px;
+    display: none;
+}
+
+#reset {
+    margin: 25px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #b6aaff;
+    border-radius: 15px;
+    color: #aebdbb;
+}
+
+#reset:hover {
+    background-color: #9549de;
+}
+
+a {
+    text-decoration-line: none;
+    font-size: 1.4em;
+    margin: 15px;
+    color: #eefffc;
+}
+
+
+@media screen and (max-width: 320px){
+    #jeu {
+        width: 90%;
+        height: 500px;
+    }
+
+    #joueur1 {
+        width: 25%;
+        height: 20%;
+        font-size: 2em;
+    }
+
+    #score {
+        width: 12%;
+        font-size: 0.5em;
+    }
+
+    #joueur2 {
+        width: 25%;
+        height: 20%;
+        font-size: 2em;
+    }
+
+    #choice {
+        font-size: 1em;
+    }
+
+    #win {
+        font-size: 0.5em;
+    }
+
+
+}
+
+@media screen and (max-width: 1080px){
+    #jeu {
+        width: 90%;
+        height: 500px;
+    }
+
+    #joueur1 {
+        width: 25%;
+        height: 20%;
+        font-size: 2em;
+    }
+
+    #score {
+        width: 12%;
+        font-size: 0.5em;
+    }
+
+    #joueur2 {
+        width: 25%;
+        height: 20%;
+        font-size: 2em;
+    }
+
+    #choice {
+        font-size: 1em;
+    }
+
+    #win {
+        font-size: 0.5em;
+    }
+
+
 }
