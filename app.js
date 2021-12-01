@@ -48,11 +48,7 @@ cissor.addEventListener("click", function () {
         result.style.color = '#00fa0b';
 
         if (result.innerHTML === 'Gagné') {
-            for (let i = 1; i < 4; ) {
-
-                victory[i].innerHTML += i++
-
-            }
+           //Créer une boucle calcul (regarder dans le cours les tableaux)
         }
 
     }
