@@ -64,4 +64,10 @@ papper.addEventListener("click", function (){
     if (joueur2.innerHTML === 'ciseaux'){
         alert('perdu');
     }
+    if (joueur2.innerHTML === 'pierre'){
+        alert('Gagné');
+    }
+    if (joueur2.innerHTML === 'papier'){
+        alert('egalité');
+    }
 })
