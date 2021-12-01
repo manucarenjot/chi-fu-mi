@@ -5,6 +5,7 @@ let joueur2 = document.getElementById('joueur2');
 let cissor = document.getElementById('cissor');
 let rock = document.getElementById('rock');
 let papper = document.getElementById('papper');
+let result = document.getElementById('resultat');
 
 let ciseaux = 'ciseaux';
 let papier = 'papier';
@@ -17,7 +18,7 @@ let tableau = [ciseaux, papier, pierre];
 
 //à modifier
 function pcGame() {
-    let randomTab = Math.round(Math.random() * tableau.length);
+    let randomTab = Math.floor(Math.random() * tableau.length);
 
     console.log(randomTab)
     player2 = randomTab
@@ -34,13 +35,16 @@ cissor.addEventListener("click", function (){
     joueur1.innerHTML = 'ciseaux';
     pcGame()
     if (joueur2.innerHTML === 'ciseaux'){
-        alert('Egalité');
+        result.innerHTML = 'Egalité';
+        result.style.color = 'orange';
     }
     if (joueur2.innerHTML === 'papier'){
-        alert('Gagné');
+        result.innerHTML = 'Gagné';
+        result.style.color = '#00fa0b';
     }
     if (joueur2.innerHTML === 'pierre'){
-        alert('perdu');
+        result.innerHTML = 'perdu';
+        result.style.color = 'red';
     }
 })
 

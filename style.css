@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
 
+
 }
 
 #jeu {
@@ -18,7 +19,7 @@ body {
     height: 600px;
     border: inset 18px #9549de;
     border-radius: 20px;
-    background-color: #aae3c7;
+    background-color: #dcfff2;
     display: flex;
     flex-direction: row;
     justify-content: center;
