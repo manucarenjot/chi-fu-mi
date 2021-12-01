@@ -31,21 +31,35 @@ function pcGame() {
 
 
 cissor.addEventListener("click", function (){
-
+    joueur1.innerHTML = 'ciseaux';
     pcGame()
+    if (joueur2.innerHTML === 'ciseaux'){
+        alert('Egalité');
+    }
+    if (joueur2.innerHTML === 'papier'){
+        alert('Gagné');
+    }
     if (joueur2.innerHTML === 'pierre'){
         alert('perdu');
     }
 })
 
 rock.addEventListener("click", function (){
+    joueur1.innerHTML = 'pierre';
     pcGame()
+    if (joueur2.innerHTML === 'papier'){
+        alert('perdu');
+    }
+    if (joueur2.innerHTML === 'pierre'){
+        alert('egalité');
+    }
     if (joueur2.innerHTML === 'papier'){
         alert('perdu');
     }
 })
 
 papper.addEventListener("click", function (){
+    joueur1.innerHTML = 'papier';
     pcGame()
     if (joueur2.innerHTML === 'ciseaux'){
         alert('perdu');

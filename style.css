@@ -46,6 +46,11 @@ i:hover {
     height: 50%;
     border: ridge 8px #0083a1;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 #score {
@@ -57,4 +62,9 @@ i:hover {
     height: 50%;
     border: ridge 8px #d31111;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
